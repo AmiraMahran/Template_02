@@ -1,0 +1,703 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "pt-sans", sans-serif;
+}
+
+
+header {
+    padding: 40px 0;
+
+}
+
+
+.header-content {
+    width: 80%;
+    height: 70px;
+    margin: auto;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 10% 60% 20%;
+    gap: 20px;
+    background-color: #7b5244;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.header-logo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: xx-large;
+    font-style: italic;
+    color: antiquewhite;
+}
+
+
+
+.header-content nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+
+
+.header-content nav ul a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: antiquewhite;
+    position: relative;
+    font-style: italic;
+    padding: 10px;
+}
+
+
+/* table {
+    width: 400px;
+    height: 200px;
+    border: 2px solid #7b5244;
+    background-color: #7b5244;
+    color: antiquewhite;
+}
+
+.table {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    z-index: 1;
+    transition: 2s;
+    transform: scale(0);
+}
+
+.header-li-one:hover .table {
+    transform: scale(1);
+} */
+/* nav ul .li-one {
+    position: relative;
+
+}
+
+.table {
+    position: absolute;
+    top: 14%;
+    left: 20%;
+    width: 400px;
+    height: 200px;
+    background-color: aqua;
+    border: 1px solid red;
+    transition: 2s;
+    z-index: 2;
+}
+
+nav ul .li-one:hover .table {
+transform: scale(0);
+} */
+
+.header-icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.header-icons-three {
+    position: relative;
+}
+
+.header-icons i {
+    font-size: 25px;
+}
+
+.header-icons span {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.header-li-one {
+    position: relative;
+}
+
+
+
+.header-content nav .header-list a::after {
+    content: "";
+    position: absolute;
+
+    width: 0;
+    height: 1px;
+
+    bottom: 0;
+    left: 0;
+
+    background-color: antiquewhite;
+    transition: 0.3s;
+    visibility: hidden;
+}
+
+.header-content nav .header-list a::before {
+    content: "";
+    position: absolute;
+
+    width: 0;
+    height: 1px;
+
+    top: 0;
+    left: 0;
+
+    background-color: antiquewhite;
+    transition: 0.3s;
+    visibility: hidden;
+}
+
+.header-content nav .header-list a:hover::after {
+    visibility: visible;
+    width: 100%;
+}
+
+.header-content nav .header-list a:hover::before {
+    visibility: visible;
+    width: 100%;
+}
+
+
+.header-list a:hover {
+    border-left: 1px solid antiquewhite;
+    border-right: 1px solid antiquewhite;
+
+}
+
+.header-icons .header-icons-three::after {
+    position: absolute;
+    content: "0";
+
+    right: 0.5;
+    bottom: -4px;
+
+    background-color: antiquewhite;
+    border-radius: 50%;
+
+    padding: 4px;
+    font-size: 13px;
+    color: #7b5244;
+}
+
+/* ----------------------------------------------------------- */
+
+
+.contaier {
+    position: relative;
+    width: 79%;
+    height: 70vh;
+    margin: auto;
+    background-color: antiquewhite;
+    background-image: url(../images/pexels-anna-tarazevich-7216835.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.486)
+}
+
+.contant {
+    margin-top: 110px;
+    position: absolute;
+    margin-left: 70px;
+}
+
+.contant h1 {
+    color: antiquewhite;
+    line-height: 60px;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.contant button {
+    border: none;
+    padding: 10px;
+    background-color: #7b5244;
+    color: aliceblue;
+    border-radius: 5px;
+    border-bottom: 7px solid aliceblue;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+/* ------------------------------------- */
+
+.special-parent {
+    width: 100%;
+    height: 380px;
+
+}
+
+.special-container {
+    position: relative;
+    width: 80%;
+    height: 70vh;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.special-container h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #7b5244;
+}
+
+.special-line {
+    width: 70px;
+    height: 1px;
+    background-color: #7b5244;
+    margin: auto;
+    transition: 1s;
+}
+
+.section-header:hover .special-line {
+    width: 150px;
+}
+
+.special-items {
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.special-items .special-item {
+    width: 24%;
+    height: 92%;
+    position: relative;
+    margin: 0 5px;
+}
+
+.special-item-contant span {
+    color: #7b5244;
+    font-size: 13px;
+    line-height: 10px;
+}
+
+.special-icon {
+    position: absolute;
+    content: "";
+    text-align: center;
+    color: white;
+    width: 30px;
+    height: 30px;
+
+    bottom: 0;
+    right: 0;
+    background-color: #7b5244;
+    visibility: hidden;
+}
+
+.special-item:hover .special-icon {
+    visibility: visible;
+    font-size: 30px;
+    font-weight: 500px;
+}
+
+/*  -------------------------- */
+
+.sec-two-parent {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+}
+
+
+.sec-two-container {
+    width: 80%;
+    height: 90%;
+    margin: auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.marketing {
+    width: 55%;
+    height: 90%;
+    background-color: #eee;
+    padding: 15px;
+}
+
+
+.discount-one,
+.discount-two {
+    width: 25%;
+    height: 90%;
+    margin-left: 20px;
+    padding: 20px;
+    line-height: 20px;
+    transition: 0.5s;
+}
+
+.discount-one {
+    background-image: url(../images/pexels-cottonbro-studio-6650001.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.discount-two {
+    background-image: url(../images/pexels-mike-jones-9461268.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #eee;
+}
+
+
+
+.marketing i {
+    font-size: 40px;
+    margin-top: 10px;
+    color: #7b5244;
+}
+
+.marketing h3 {
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    color: #7b5244;
+}
+
+.marketing-span {
+    margin-left: 40px;
+    margin-top: -10px;
+    font-size: small;
+}
+
+.marketing-par {
+    font-size: small;
+    margin-top: 30px;
+    line-height: 25px;
+}
+
+
+.discount-one:hover,
+.discount-two:hover {
+    transform: scale(1.1, 1.1);
+
+}
+
+.markting-lin1 {
+    width: 40px;
+    height: 2px;
+    background-color: #7b5244;
+    margin-left: 450px;
+    margin-top: 30px;
+}
+
+.markting-lin2 {
+    width: 40px;
+    height: 2px;
+    background-color: #7b5244;
+    margin-left: 400px;
+    margin-top: -2px;
+}
+
+.markting-lin3 {
+    width: 40px;
+    height: 2px;
+    background-color: #7b5244;
+    margin-left: 350px;
+    margin-top: -2px;
+}
+
+
+
+.icons-parent {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-auto-rows: minmax(120px, auto);
+
+    margin-top: 30px;
+
+}
+
+.icons-overflow {
+    height: 80px;
+    overflow: hidden;
+
+}
+
+.icons-overflow img {
+    /* width: ; */
+    /* height: 100px; */
+    margin-top: 35px;
+    width: 17%;
+    transition: 0.5s;
+}
+
+.icons-overflow:hover img {
+    margin-top: -59px;
+}
+
+.icons-box {
+    text-align: center;
+    /* background-color: aqua; */
+    border-right: 1px solid #7b5244;
+}
+
+.icons-box h2 {
+    font-size: 25px;
+    text-transform: capitalize;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.box-2 img {
+    margin-top: -155px;
+}
+
+.box-2:hover img {
+    margin-top: -255px;
+}
+
+.box-3 img {
+    margin-top: -345px;
+}
+
+.box-3:hover img {
+    margin-top: -440px;
+}
+
+.box-4 img {
+    margin-top: -540px;
+}
+
+.box-4:hover img {
+    margin-top: -630px;
+}
+
+.ibox-5 {
+    border-right: 0;
+    /* margin-top: -700px; */
+}
+
+.box-5 img {
+    margin-top: -730px;
+}
+
+.box-5:hover img {
+    margin-top: -820px;
+}
+
+.icons-box h3 {
+    text-transform: capitalize;
+}
+
+.icons-box p {
+    font-size: 15px;
+    color: gray;
+}
+
+/* ---------------------- */
+
+.featured-parent {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.featured-parent h1 {
+    color: #7b5244;
+}
+
+.featured-line {
+    width: 70px;
+    height: 1px;
+    background-color: #7b5244;
+    margin: auto;
+    margin-top: 10px;
+    transition: 1s;
+}
+
+.featured-header:hover .featured-line {
+    width: 150px;
+}
+
+.featured-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.featured-list li {
+    list-style: none;
+    display: inline-flex;
+    margin-left: 30px;
+    font-size: small;
+}
+
+.featured-container {
+    width: 80%;
+    height: 100vh;
+    margin-top: 30px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(3, 350px);
+    grid-gap: 2% 5%;
+
+}
+
+.featured-items {}
+
+.featured-packge {
+    position: relative;
+    width: 100%;
+    height: 85%;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.featured-packge:hover {
+    transform: rotateY(180deg);
+}
+
+.featured-imag-front,
+.featured-back {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+}
+
+.featured-back {
+    position: relative;
+    /* background-image: url(../images/images/category-banner3.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
+}
+
+.featued-back-overly {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.514);
+}
+
+.featured-icons {
+    margin: auto;
+    margin-top: 120px;
+    font-size: 35px;
+
+}
+
+.featured-icons i {
+    color: black;
+}
+
+.featured-imag-front {
+    width: 100%;
+    height: 100%;
+    /* background-image: url(../images/pexels-cottonbro-studio-6650001.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+    z-index: 1;
+    backface-visibility: hidden;
+}
+
+
+
+.featued-icons {
+    text-align: left;
+    font-size: small;
+    color: #7b5244;
+}
+
+.icons-star {
+    color: #7b5244;
+}
+
+.feadtured-info {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.front_1 {
+    background-image: url(../images/pexels-anne-r-3661622.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.back_1 {
+    background-image: url(../images/pexels-anne-r-3661622.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.front_2 {
+    background-image: url(../images/pexels-cottonbro-studio-4068314.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.back_2 {
+    background-image: url(../images/pexels-cottonbro-studio-4068314.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.front_3 {
+    background-image: url(../images/pexels-athena-2081199.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.back_3 {
+    background-image: url(../images/pexels-athena-2081199.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.front_4 {
+    background-image: url(../images/pexels-cottonbro-studio-6650009.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.back_4 {
+    background-image: url(../images/pexels-cottonbro-studio-6650009.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.front_5 {
+    background-image: url(../images/pexels-rodrigo-santos-2444913.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.back_5 {
+    background-image: url(../images/pexels-rodrigo-santos-2444913.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.front_6 {
+    background-image: url(../images/pexels-cats-coming-1204459.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.back_6 {
+    background-image: url(../images/pexels-cats-coming-1204459.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
